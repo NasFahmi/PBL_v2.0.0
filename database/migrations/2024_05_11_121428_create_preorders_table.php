@@ -11,8 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('log_activities', function (Blueprint $table) {
+        Schema::create('preorders', function (Blueprint $table) {
             $table->id();
+            $table->boolean('is_dp');
+            $table->string('down_payment');
+            $table->date('date');
             $table->timestamps();
         });
     }
@@ -22,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('log_activities');
+        Schema::dropIfExists('preorders');
     }
 };

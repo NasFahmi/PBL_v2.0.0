@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\LogActivities;
-use App\Http\Requests\StoreLogActivitiesRequest;
-use App\Http\Requests\UpdateLogActivitiesRequest;
+use App\Models\TypeAsset;
+use App\Http\Requests\StoreTypeAssetRequest;
+use App\Http\Requests\UpdateTypeAssetRequest;
 
-class LogActivitiesController extends Controller
+class TypeAssetController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class LogActivitiesController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreLogActivitiesRequest $request)
+    public function store(StoreTypeAssetRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class LogActivitiesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(LogActivities $logActivities)
+    public function show(TypeAsset $typeAsset)
     {
         //
     }
@@ -43,7 +43,7 @@ class LogActivitiesController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(LogActivities $logActivities)
+    public function edit(TypeAsset $typeAsset)
     {
         //
     }
@@ -51,7 +51,7 @@ class LogActivitiesController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateLogActivitiesRequest $request, LogActivities $logActivities)
+    public function update(UpdateTypeAssetRequest $request, TypeAsset $typeAsset)
     {
         //
     }
@@ -59,7 +59,7 @@ class LogActivitiesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(LogActivities $logActivities)
+    public function destroy(TypeAsset $typeAsset)
     {
         //
     }
